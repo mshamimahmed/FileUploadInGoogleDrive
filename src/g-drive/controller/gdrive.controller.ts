@@ -21,4 +21,9 @@ export class GdriveController {
         // console.log(attachment);
         return this.gdriveService.create(attachment,gdrive)
     }
+    @Post("gmail")
+    detectGmail() {
+        // console.log(attachment);
+        return this.gdriveService.watchGmail()
+    }
 }
